@@ -6,10 +6,21 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		C58F1A8529DEFE550070882B /* O(n^2)Sorting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "O(n^2)Sorting.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C58F1A8629DF0B7C0070882B /* MergeSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MergeSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C58F1A8729DF16DC0070882B /* Radix Sort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Radix Sort.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C58F1A8829DF1C240070882B /* QuickSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		C58F1A7E29DEE7FB0070882B = {
 			isa = PBXGroup;
 			children = (
+				C58F1A8829DF1C240070882B /* QuickSort.playground */,
+				C58F1A8729DF16DC0070882B /* Radix Sort.playground */,
+				C58F1A8629DF0B7C0070882B /* MergeSort.playground */,
+				C58F1A8529DEFE550070882B /* O(n^2)Sorting.playground */,
 			);
 			sourceTree = "<group>";
 		};
