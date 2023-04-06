@@ -1,0 +1,90 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C53DDF6929BEFB9C00E0CF73 /* 2.Complexity.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2.Complexity.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C53DDF6A29BF653800E0CF73 /* 3.SwiftStandardLibrary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 3.SwiftStandardLibrary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C58A3F8529BEFB630095B474 = {
+			isa = PBXGroup;
+			children = (
+				C53DDF6A29BF653800E0CF73 /* 3.SwiftStandardLibrary.playground */,
+				C53DDF6929BEFB9C00E0CF73 /* 2.Complexity.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C58A3F8629BEFB630095B474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = C58A3F8929BEFB630095B474 /* Build configuration list for PBXProject "1.Introduction" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C58A3F8529BEFB630095B474;
+			packageReferences = (
+				C53DDF6B29BF6CFC00E0CF73 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C58A3F8A29BEFB630095B474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C58A3F8B29BEFB630095B474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C58A3F8929BEFB630095B474 /* Build configuration list for PBXProject "1.Introduction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58A3F8A29BEFB630095B474 /* Debug */,
+				C58A3F8B29BEFB630095B474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C53DDF6B29BF6CFC00E0CF73 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = C58A3F8629BEFB630095B474 /* Project object */;
+}

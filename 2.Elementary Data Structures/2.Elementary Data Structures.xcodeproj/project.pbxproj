@@ -1,0 +1,80 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C529801429D2E8260096705C /* LinkedListsChallenges.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedListsChallenges.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C594CD1329C9C93C009D52CE /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C594CD1529CAD8E3009D52CE /* LinkedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedLists.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5AA678829D319C0002C7FC8 /* Queues.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Queues.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C594CD0C29C9C934009D52CE = {
+			isa = PBXGroup;
+			children = (
+				C5AA678829D319C0002C7FC8 /* Queues.playground */,
+				C529801429D2E8260096705C /* LinkedListsChallenges.playground */,
+				C594CD1529CAD8E3009D52CE /* LinkedLists.playground */,
+				C594CD1329C9C93C009D52CE /* Stack.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C594CD0D29C9C934009D52CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = C594CD1029C9C934009D52CE /* Build configuration list for PBXProject "2.Elementary Data Structures" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C594CD0C29C9C934009D52CE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C594CD1129C9C934009D52CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C594CD1229C9C934009D52CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C594CD1029C9C934009D52CE /* Build configuration list for PBXProject "2.Elementary Data Structures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C594CD1129C9C934009D52CE /* Debug */,
+				C594CD1229C9C934009D52CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C594CD0D29C9C934009D52CE /* Project object */;
+}
