@@ -1,0 +1,92 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C5149F8929D546D100A95205 /* 3-30.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3-30.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5149F8F29D58C8200A95205 /* 4-1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-1.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C56DB91729CD3FF5008C522C /* 31-40.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "31-40.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C56DB91B29D13A5A008C522C /* 3-28.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3-28.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C56E152629C48DBE00E4E021 /* LV0,1-10.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "LV0,1-10.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C58F1A8929DFE90A0070882B /* 4-7.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-7.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C594CD1D29CBE3AC009D52CE /* 21-30.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21-30.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5AA8D6E29D9705100B22329 /* 4-2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-2.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5C60DFF29C9423C00BD475B /* 11-20.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11-20.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5FA21F629D3DD0700BD2F0E /* 3-29.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3-29.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C56E151F29C48D9B00E4E021 = {
+			isa = PBXGroup;
+			children = (
+				C58F1A8929DFE90A0070882B /* 4-7.playground */,
+				C5AA8D6E29D9705100B22329 /* 4-2.playground */,
+				C5149F8F29D58C8200A95205 /* 4-1.playground */,
+				C5149F8929D546D100A95205 /* 3-30.playground */,
+				C5FA21F629D3DD0700BD2F0E /* 3-29.playground */,
+				C56DB91B29D13A5A008C522C /* 3-28.playground */,
+				C56DB91729CD3FF5008C522C /* 31-40.playground */,
+				C594CD1D29CBE3AC009D52CE /* 21-30.playground */,
+				C5C60DFF29C9423C00BD475B /* 11-20.playground */,
+				C56E152629C48DBE00E4E021 /* LV0,1-10.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C56E152029C48D9B00E4E021 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = C56E152329C48D9B00E4E021 /* Build configuration list for PBXProject "코딩테스트" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C56E151F29C48D9B00E4E021;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C56E152429C48D9B00E4E021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C56E152529C48D9B00E4E021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C56E152329C48D9B00E4E021 /* Build configuration list for PBXProject "코딩테스트" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56E152429C48D9B00E4E021 /* Debug */,
+				C56E152529C48D9B00E4E021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C56E152029C48D9B00E4E021 /* Project object */;
+}

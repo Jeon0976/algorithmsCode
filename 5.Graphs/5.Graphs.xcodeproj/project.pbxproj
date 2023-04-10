@@ -1,0 +1,74 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C58F1A9129E06CA50070882B /* Graphs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Graphs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C58F1A8A29E06C9D0070882B = {
+			isa = PBXGroup;
+			children = (
+				C58F1A9129E06CA50070882B /* Graphs.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C58F1A8B29E06C9D0070882B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = C58F1A8E29E06C9D0070882B /* Build configuration list for PBXProject "5.Graphs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C58F1A8A29E06C9D0070882B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C58F1A8F29E06C9D0070882B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C58F1A9029E06C9D0070882B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C58F1A8E29E06C9D0070882B /* Build configuration list for PBXProject "5.Graphs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58F1A8F29E06C9D0070882B /* Debug */,
+				C58F1A9029E06C9D0070882B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C58F1A8B29E06C9D0070882B /* Project object */;
+}
