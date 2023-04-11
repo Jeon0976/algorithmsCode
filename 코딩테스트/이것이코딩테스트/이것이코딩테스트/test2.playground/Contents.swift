@@ -171,3 +171,7 @@ func fibo2(_ x: Int) -> Int {
 
 fibo2(5)
 fibo(5)
+
+var graph = [[[Int]]](repeating: [[Int]](), count: 6)
+
+

@@ -13,6 +13,8 @@
 		C56DB91B29D13A5A008C522C /* 3-28.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3-28.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C56E152629C48DBE00E4E021 /* LV0,1-10.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "LV0,1-10.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C58F1A8929DFE90A0070882B /* 4-7.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-7.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C58F1A9829E43EF00070882B /* 4-10.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-10.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C58F1A9929E5228B0070882B /* 4-11.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-11.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C594CD1D29CBE3AC009D52CE /* 21-30.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21-30.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5AA8D6E29D9705100B22329 /* 4-2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-2.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5C60DFF29C9423C00BD475B /* 11-20.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11-20.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -23,6 +25,8 @@
 		C56E151F29C48D9B00E4E021 = {
 			isa = PBXGroup;
 			children = (
+				C58F1A9929E5228B0070882B /* 4-11.playground */,
+				C58F1A9829E43EF00070882B /* 4-10.playground */,
 				C58F1A8929DFE90A0070882B /* 4-7.playground */,
 				C5AA8D6E29D9705100B22329 /* 4-2.playground */,
 				C5149F8F29D58C8200A95205 /* 4-1.playground */,

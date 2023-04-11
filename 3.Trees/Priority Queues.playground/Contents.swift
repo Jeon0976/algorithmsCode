@@ -254,9 +254,9 @@ waitlist.sort { tswiftSort(person1: $0, person2: $1)}
 print(waitlist.map { $0.name })
 
 
-var priorityQueue = PriorityQueue(sort: tswiftSort, elements: waitlist)
-while !priorityQueue.isEmpty {
-  print(priorityQueue.dequeue()!)
+var priorityQueue2 = PriorityQueue(sort: tswiftSort, elements: waitlist)
+while !priorityQueue2.isEmpty {
+  print(priorityQueue2.dequeue()!)
 }
 
 
