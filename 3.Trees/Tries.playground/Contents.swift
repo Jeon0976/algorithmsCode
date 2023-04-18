@@ -159,7 +159,7 @@ public extension Trie where CollectionType: RangeReplaceableCollection {
             results.append(prefix)
         }
         
-        for child in node.children.values {
+        for child i n node.children.values {
             var prefix = prefix
             prefix.append(child.key!)
             results.append(contentsOf: collections(startingWith: prefix, after: child))

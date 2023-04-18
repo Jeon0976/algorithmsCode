@@ -74,8 +74,10 @@ public class Node<T> {
     public var next: Node<T>?
     public var prev: Node<T>?
     
-    public init(value: T) {
+    public init(value: T, next: Node? = nil, prev: Node? = nil) {
         self.value = value
+        self.next = next
+        self.prev = prev
     }
 }
 /// Queue로 구현할거라서 push 함수를 구현할 필요가 없다.
@@ -108,6 +110,14 @@ public class DoublyLinkedList<T> {
             currentIndex += 1
         }
         return currentNode
+    }
+    
+    public func insert(_ value: T, after node: Node<T>)  {
+        let newNode = Node(value: value,next: node.next,prev: node)
+        
+        node.next?.prev = newNode
+        node.next = newNode
+ 
     }
     
     public func push(_ value: T) {
@@ -153,6 +163,22 @@ public class DoublyLinkedList<T> {
         return head!.value
     }
     
+    public func removeLast() -> T? {
+        if isEmpty {
+            return nil
+        }
+        
+        let prevNode = tail?.prev
+        
+        defer {
+            prevNode?.next = nil
+            tail?.prev = nil
+            tail = prevNode
+        }
+        
+        return tail!.value
+    }
+    
     public func remove(_ node: Node<T>) -> T {
         let prev = node.prev
         let next = node.next
@@ -175,6 +201,8 @@ public class DoublyLinkedList<T> {
         return node.value
     }
 }
+
+
 
 extension DoublyLinkedList: CustomStringConvertible {
     public var description: String {
@@ -235,10 +263,13 @@ doubly.append(3)
 doubly.append(2)
 doubly.removeFirst()
 doubly
-doubly.append(2)
+doubly.insert(1, after: doubly.node(at: 0)!)
+doubly.append(6)
+doubly.removeLast()
+doubly
 doubly.remove(doubly.node(at: 2)!)
 doubly
-
+doubly.count
 
 public class QueueLinkedList<T>: Queue {
     

@@ -272,3 +272,35 @@ graph2.add(.directed, from: sanFrancisco2, to: seattle2, weight: 218)
 graph2.add(.directed, from: austinTexas2, to: sanFrancisco2, weight: 297)
 
 print(graph2)
+
+
+24 % 5
+24/3
+24/1
+5/2
+6/2
+
+func solution(_ citations:[Int]) -> Int {
+    var sortedCitations = citations.sorted()
+    
+    let count = sortedCitations.count
+    
+    var result = 0
+    
+    var big = false
+    
+    for (index, value) in sortedCitations.enumerated() {
+        if value <= count - index && index <= value {
+            result = value
+            big = true
+            print(result)
+        }
+//        print(index)
+    }
+    if big == false {
+        return count
+    }
+    
+    return result
+}
+solution([10,100])
