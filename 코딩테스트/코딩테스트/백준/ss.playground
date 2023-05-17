@@ -1,0 +1,35 @@
+//
+//  main.swift
+//  코딩테스트
+//
+//  Created by 전성훈 on 2023/05/08.
+//
+
+import Foundation
+
+var count = 0
+
+let numCount = Int(readLine()!)!
+let numArray = readLine()!.components(separatedBy: " ").map { Int($0)! }
+
+let numArrayMaxValue = numArray.max()!
+
+var checkCount = [Bool](repeating: true, count: numArrayMaxValue + 1)
+
+for i in 2..<Int(sqrt(Double(numArrayMaxValue))) + 1 {
+   if checkCount[i] == true {
+       var j = 2
+       while(i * j) <= numArrayMaxValue {
+           checkCount[i * j] = false
+           j += 1
+       }
+   }
+}
+
+for num in numArray {
+    if checkCount[num] == true {
+        count += 1
+    }
+}
+
+print(count)

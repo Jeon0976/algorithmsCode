@@ -202,7 +202,8 @@ let tree = makeBeverageTree()
 //}
 
 tree.forEachLevelOrderPrint()
-
+//tree.forEachDepthFirst { print($0.value)}
+tree.forEachLevelOrder { print($0.value)}
 //if let searchResult1 = tree.search("ginger ale") {
 //  print("Found node: \(searchResult1.value)")
 //}

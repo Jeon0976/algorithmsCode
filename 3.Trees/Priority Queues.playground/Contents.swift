@@ -174,9 +174,9 @@ while !priorityQueue.isEmpty {
 public struct PriorityQueueArray<T: Equatable>: Queue {
     private var elements:[T] = []
     
-    let sort: (Element, Element) -> Bool
+    let sort: (T, T) -> Bool
     
-    public init(sort: @escaping (Element,Element) -> Bool, elements: [Element] = []) {
+    public init(sort: @escaping (T,T) -> Bool, elements: [T] = []) {
         self.sort = sort
         self.elements = elements
         self.elements.sort(by: sort)

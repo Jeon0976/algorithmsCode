@@ -99,7 +99,7 @@ struct Heap<Element: Equatable> {
         return elements.removeLast()
     }
     
-    mutating func siftDown(from index: Int) {
+    private mutating func siftDown(from index: Int) {
         var parent = index
         
         // Continue sifting until you return.
@@ -135,7 +135,7 @@ struct Heap<Element: Equatable> {
     }
     
     // 복습 필요 (Insert 할 때만 추가)
-    mutating func siftUp(from index: Int) {
+    private mutating func siftUp(from index: Int) {
         var child = index
         var parent = parentIndex(ofChildAt: child)
         while child > 0 && sort(elements[child], elements[parent]) {
@@ -197,8 +197,9 @@ struct Heap<Element: Equatable> {
         return nil
     }
 }
+// count를 활용해서 index overflow 읽는거 방지 가능
 var arrw = [1,2,3,4]
-if 6 < arrw.count && arrw[6] < arrw[1] {
+if 6 < arrw.count, arrw[6] < arrw[1] {
     print(true)
 } else {
     print(false)
@@ -210,7 +211,8 @@ var heap2 = Heap(sort: >, elements: [1,12,3,4,1,6,8,7])
 print(heap)
 print(heap2)
 
-heap.index(of: 1, startingAt: 1)
+heap.index(of: 7, startingAt: 0)
+//heap.remove(at: 7)
 heap.count
 
 
@@ -313,3 +315,7 @@ func isMinHeap<Element: Comparable>(elements: [Element]) -> Bool {
 
 
 7/2-1
+1/2
+2/2
+3/2
+

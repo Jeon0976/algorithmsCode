@@ -307,7 +307,6 @@ extension AVLTree {
     } else {
       node.rightChild = remove(node: node.rightChild, value: value)
     }
-    print(node)
     let balancedNode = balanced(node)
     balancedNode.height = max(balancedNode.leftHeight, balancedNode.rightHeight) + 1
     return balancedNode
@@ -318,13 +317,13 @@ extension AVLTree {
 
 var tree = AVLTree<Int>()
 
-for i in 0..<15 {
+for i in 0..<16 {
     tree.insert(i)
 }
-
+print(tree)
 //print(tree)
-tree.remove(11)
-
+tree.remove(14)
+print(tree)
 /// **Challenge 1: Number of leaves**
 /// - How many leaf nodes are there in a perfectly balanced tree of height 3?
 /// - What about a perfectly balanced tree of height h?

@@ -13,10 +13,10 @@ public func quicksortNaive<T: Comparable>(_ a:[T]) -> [T] {
     let less = a.filter { $0 < pivot }
     let equal = a.filter { $0 == pivot }
     let greater = a.filter { $0 > pivot }
-    print(less, terminator: " ")
-    print(equal, terminator: " ")
-    print(greater, terminator: " ")
-    print()
+//    print(less, terminator: " ")
+//    print(equal, terminator: " ")
+//    print(greater, terminator: " ")
+//    print()
     return quicksortNaive(less) + equal + quicksortNaive(greater)
 }
 var array = [12, 0, 3, 9, 2, 21, 18, 27, 1, 5, 8, -1,8]
@@ -29,7 +29,7 @@ quicksortNaive(array)
 /// **Lomuto's partitioning**
 /// - Lomuto's partitioning algorithm always chooses the last element as the pivot.
 /// - The function returns the index of the pivot.
-public func partitionLomuto<T: Comparable>(_ a: inout[T], low: Int, high: Int) -> Int {
+private func partitionLomuto<T: Comparable>(_ a: inout[T], low: Int, high: Int) -> Int {
     let pivot = a[high]
     
     var i = low
@@ -37,7 +37,6 @@ public func partitionLomuto<T: Comparable>(_ a: inout[T], low: Int, high: Int) -
         if a[j] <= pivot {
             a.swapAt(i, j)
             i += 1
-            print(a)
         }
     }
     
@@ -49,7 +48,7 @@ public func partitionLomuto<T: Comparable>(_ a: inout[T], low: Int, high: Int) -
 public func quicksortLomuto<T: Comparable>(_ a: inout [T], low: Int, high: Int) {
     if low < high {
         let pivot = partitionLomuto(&a, low: low, high: high)
-        quicksortLomuto(&a, low: low, high: high - 1)
+        quicksortLomuto(&a, low: low, high: pivot - 1)
         quicksortLomuto(&a, low: pivot + 1, high: high)
     }
 }

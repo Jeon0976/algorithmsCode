@@ -4,7 +4,7 @@ import Foundation
 /// - Binary Search is one of the most efficient searching algorithms with time complexity of O(logn).
 /// - This is comparable with searching for an element inside a balanced binary search tree.
 /// - Two conditions that need to be met before binary search may be used
-/// - 1. The colleciton must be able to perfom index manipulation in constant time. This means that the collection must be a RandomAccessCollection.
+/// - 1. The colleciton must be able to perfom index manipulation in const#fileLiteral(resourceName: "dd.playground")ant time. This means that the collection must be a RandomAccessCollection.
 /// - 2. The collection must be sorted.
 
 /// Swift's Array type uses linear search to implement its firstIndex(of:) method.

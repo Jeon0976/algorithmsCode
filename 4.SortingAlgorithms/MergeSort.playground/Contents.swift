@@ -21,6 +21,8 @@ public func mergeSort<Element>(_ array: [Element]) -> [Element] where Element: C
     let left = mergeSort(Array(array[..<middle]))
     let right = mergeSort(Array(array[middle...]))
 
+    print("left ",left)
+    print("right ",right)
     return merge(left, right)
 }
 
@@ -56,7 +58,7 @@ private func merge<Element>(_ left1:[Element], _ right1:[Element]) -> [Element] 
     if rightIndex < right1.count {
         result.append(contentsOf: right1[rightIndex...])
     }
-    
+    print("result ",result)
     return result
 }
 

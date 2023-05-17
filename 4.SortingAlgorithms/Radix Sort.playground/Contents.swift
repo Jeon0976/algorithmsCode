@@ -29,6 +29,7 @@ extension Array where Element == Int {
                     done = false
                 }
             }
+            print(buckets)
             digits *= base
             self = buckets.flatMap { $0 }
         }
@@ -41,3 +42,9 @@ array.radixSort()
 
 var array2 = [4,3,2,1]
 array2.radixSort()
+223424 / 1
+4 % 10
+10 * 10
+433 / 10
+43 % 10
+//433 % 10

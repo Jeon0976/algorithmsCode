@@ -148,6 +148,8 @@ graph.add(.undirected, from: austinTexas, to: sanFrancisco, weight: 297)
 
 print(graph)
 
+print(graph)
+
 graph.weight(from: singapore, to: tokyo)
 
 graph.weight(from: singapore, to: seattle)
@@ -177,11 +179,10 @@ public class AdjacencyMatrix<T>: Graph {
         for i in 0..<weights.count {
             weights[i].append(nil)
         }
-        
+
         // 추가된 vertex의 가중치를 위한 자리 만들기
         let row = [Double?](repeating: nil, count: vertices.count)
         weights.append(row)
-
         return vertex
     }
     
@@ -272,7 +273,7 @@ graph2.add(.directed, from: sanFrancisco2, to: seattle2, weight: 218)
 graph2.add(.directed, from: austinTexas2, to: sanFrancisco2, weight: 297)
 
 print(graph2)
-
+print(graph2.edges(from: sanFrancisco2))
 
 24 % 5
 24/3
@@ -304,3 +305,245 @@ func solution(_ citations:[Int]) -> Int {
     return result
 }
 solution([10,100])
+
+
+var testArray: [[Int]] = []
+var count = 0
+func makeArray() {
+    count += 1
+
+    for i in 0..<testArray.count {
+        testArray[i].append(0)
+    }
+    let row = [Int](repeating: 0, count: count)
+    testArray.append(row)
+}
+
+makeArray()
+makeArray()
+makeArray()
+for array in testArray {
+    print(array)
+}
+
+struct QueueStack<T> {
+    var leftStack: [T] = []
+    var rightStack: [T] = []
+    
+    public init() { }
+    
+    public var isEmpty:Bool {
+        leftStack.isEmpty && rightStack.isEmpty
+    }
+    
+    public var peek: T? {
+        !leftStack.isEmpty ? leftStack.last : rightStack.first
+    }
+    
+    public mutating func enqueue(_ element: T) {
+        rightStack.append(element)
+    }
+    
+    public mutating func dequeue() -> T? {
+        if leftStack.isEmpty {
+            leftStack = rightStack.reversed()
+            rightStack.removeAll()
+        }
+        return leftStack.popLast()
+    }
+}
+
+
+extension Graph where Element: Hashable {
+    func breadthFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
+        var queue = QueueStack<Vertex<Element>>()
+        var enqueue: Set<Vertex<Element>> = []
+        var visited: [Vertex<Element>] = []
+        
+        queue.enqueue(source)
+        enqueue.insert(source)
+        
+        while let vertex = queue.dequeue() {
+            visited.append(vertex)
+            let neighborEdges = edges(from: vertex)
+            neighborEdges.forEach { edge in
+                if !enqueue.contains(edge.destination) {
+                    queue.enqueue(edge.destination)
+                    enqueue.insert(edge.destination)
+                }
+            }
+        }
+        
+        return visited
+    }
+}
+
+let vv = graph.breadthFirstSearch(from: tokyo)
+vv.forEach { vertex in
+    print(vertex)
+}
+
+public struct Stack<Element> {
+    private var storage: [Element] = []
+    
+    public init() { }
+    
+    public init(_ elements: [Element]) {
+        storage = elements
+    }
+
+    public mutating func push(_ element: Element) {
+        storage.append(element)
+    }
+    
+    public mutating func pop() -> Element? {
+        storage.popLast()
+    }
+    
+    // 스택의 마지막 요소 확인하기 (stack.isEmpty의 전초)
+    public func peek() -> Element? {
+        storage.last
+    }
+    
+    public func isEmpty() -> Bool {
+        peek() == nil
+    }
+}
+
+let testGraph = [
+    [],
+    [2,3,8],
+    [1,7],
+    [1,4,5],
+    [3,5],
+    [3,4],
+    [7],
+    [2,6,8],
+    [1,7]
+]
+
+var visited = [Bool](repeating: false, count: testGraph.count)
+var visited2 = [Bool](repeating: false, count: testGraph.count)
+var visited3 = [Bool](repeating: false, count: testGraph.count)
+func bfs(_ graph: [[Int]], _ start: Int) {
+    var queue = QueueStack<Int>()
+    
+    queue.enqueue(start)
+    visited[start] = true
+    
+    while let value = queue.dequeue() {
+        print(value, terminator: " ")
+        for i in graph[value] {
+            if !visited[i] {
+                queue.enqueue(i)
+                visited[i] = true
+            }
+        }
+    }
+}
+
+func dfs(_ graph: [[Int]], _ start: Int) {
+    visited2[start] = true
+    print(start, terminator: " ")
+    for i in graph[start] {
+        if !visited2[i] {
+            dfs(graph, i)
+        }
+    }
+}
+
+func dfsStack(_ graph: [[Int]],_ start: Int) {
+    var stack = Stack<Int>()
+    
+    stack.push(start)
+    
+    while let value = stack.pop() {
+        
+        guard !visited3[value] else {
+            continue
+        }
+        
+        print(value, terminator: " ")
+        visited3[value] = true
+        for i in graph[value] {
+            if !visited3[i] {
+                stack.push(i)
+            }
+        }
+    }
+}
+func depthFirstSearch(graph: [[Int]], startVertex: Int) -> [Int] {
+    var visitedVertices = [Int]()
+    var stack = [startVertex]
+    var visited = Array(repeating: false, count: graph.count)
+
+    while !stack.isEmpty {
+        let vertex = stack.removeLast()
+        guard !visited[vertex] else {
+            continue
+        }
+
+        visitedVertices.append(vertex)
+        visited[vertex] = true
+
+        for neighbor in graph[vertex] {
+            if !visited[neighbor] {
+                stack.append(neighbor)
+            }
+        }
+    }
+
+    return visitedVertices
+}
+depthFirstSearch(graph: testGraph, startVertex: 1)
+
+
+dfsStack(testGraph, 1)
+print()
+print(visited3)
+
+dfs(testGraph, 1)
+print()
+bfs(testGraph, 1)
+print()
+
+
+
+
+extension Graph where Element: Hashable {
+
+  func depthFirstSearch(from source: Vertex<Element>)
+      -> [Vertex<Element>] {
+    var stack = Stack<Vertex<Element>>()
+    var pushed: Set<Vertex<Element>> = []
+    var visited: [Vertex<Element>] = []
+
+    stack.push(source)
+    pushed.insert(source)
+    visited.append(source)
+
+      outer: while let vertex = stack.peek() { // 1
+        let neighbors = edges(from: vertex) // 2
+        guard !neighbors.isEmpty else { // 3
+          stack.pop()
+          continue
+        }
+        for edge in neighbors { // 4
+          if !pushed.contains(edge.destination) {
+            stack.push(edge.destination)
+            pushed.insert(edge.destination)
+            visited.append(edge.destination)
+            continue outer // 5
+          }
+        }
+        stack.pop() // 6
+      }
+
+    return visited
+  }
+}
+
+let vv2 = graph.depthFirstSearch(from: tokyo)
+vv2.forEach { vertex in
+    print(vertex)
+}

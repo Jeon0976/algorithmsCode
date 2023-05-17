@@ -98,7 +98,7 @@ extension BinaryNode {
     
 }
 
-tree.traversePreOrder { print($0, terminator: " ") }
+tree.traversePreOrder { print($0 ?? "nil", terminator: " ") }
 print()
 
 /// **Post-order traversal**
@@ -171,7 +171,7 @@ func deserialize<T>(_ array: inout [T?]) -> BinaryNode<T>? {
 
 
 var array = serialize(tree)
-
+print(array)
 for num in array {
 //    if num == nil {
 //        print(num, terminator: " ")

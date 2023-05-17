@@ -39,10 +39,10 @@
 //    let c = array[2]
 //    graph[a].append([b,c])
 //}
-//
-//print(graph)
-//print(visited)
-//print(distance)
+////
+////print(graph)
+////print(visited)
+////print(distance)
 //
 //
 //// 방문하지 않은 노드 중에서, 가장 최단 거리가 짧은 노드의 번호를 반환
@@ -99,6 +99,6 @@
 //    if distance[i] == INF {
 //        print("INFINITY")
 //    } else {
-//        print(distance[i])
+//        print("\(i): ",distance[i])
 //    }
 //}

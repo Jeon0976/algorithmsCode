@@ -107,9 +107,16 @@ bst.insert(0)
 bst.insert(1)
 bst.insert(4)
 bst.insert(2)
-bst.insert(-4)
+bst.insert(-55)
 bst.insert(8)
+bst.insert(9)
+
+bst.insert(10)
+
+bst.insert(11)
+
 print(bst)
+print(bst.root)
 /// Finding Elements
 /// In-order traversal has a time complexity of O(n)
 //extension BinarySearchTree {
@@ -269,6 +276,7 @@ extension BinarySearchTree :Equatable {
     }
 }
 
+bst != bst
 /// Challenge 3. Is it a subtree?
 extension BinarySearchTree where Element: Hashable {
     public func containsSub(_ subtree: BinarySearchTree) -> Bool {

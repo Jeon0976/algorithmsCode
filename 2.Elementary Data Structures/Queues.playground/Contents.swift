@@ -25,6 +25,8 @@ public protocol Queue {
 // 3. Using a ring buffer
 // 4. Using two stacks
 
+
+
 /// **Array-based implementation**
 /// - Swift 표준 라이브러리에는 고도로 최적화된 기본 데이터 구조 집합이 포함되어 있으며, 이를 사용하여 더 높은 수준의 추상화를 구축할 수 있습니다. 그 중 하나는 Array입니다. 이는 연속적이며 순서대로 정렬된 요소 목록을 저장하는 데이터 구조입니다. 이번 섹션에서는 Array를 사용하여 큐를 생성합니다.
 public struct QueueArray<T>: Queue {
@@ -570,3 +572,58 @@ deque.dequeue(from: .back)
 deque.dequeue(from: .front)
 deque.dequeue(from: .front)
 deque
+
+
+func binarySearch(_ arr: [Int], _ target: Int) -> Int? {
+    var start = 1
+    var end = arr.max()!
+
+    while start <= end {
+        let mid = (start + end) / 2
+        let count = arr.reduce(0) { partialResult, int in
+            print("1.",partialResult," ",int," ",partialResult + int / mid )
+            return partialResult + int / mid
+        }
+//        let count = arr.reduce(0, { $0 + $1 / mid })
+        print(count)
+        if count >= target {
+            start = mid + 1
+        } else {
+            end = mid - 1
+        }
+        print("mid",mid)
+        print("start",start)
+        print("end", end)
+    }
+
+    return end
+}
+
+let k = 4
+let n = 11
+let cables = [802, 743, 457, 539]
+print(binarySearch(cables, nㅜ) ?? -1) // Output: 200
+
+func binarySearch2(_ arr: [Int], _ target: Int) -> Int {
+    var start = 1
+    var end = arr.max()!
+
+    while start <= end {
+        let mid = (start + end) / 2
+        print("mid", mid)
+        let sum = arr.filter { $0 >= mid }.reduce(0, { $0 + $1 - mid })
+        print("sum",sum)
+        if sum >= target {
+            start = mid + 1
+        } else {
+            end = mid - 1
+        }
+    }
+
+    return end
+}
+
+let nㅜ = 7
+let mㅜ = 20
+let woods = [20, 15, 10, 17, 19, 18, 13]
+print(binarySearch2(woods, mㅜ)) // Output: 15
