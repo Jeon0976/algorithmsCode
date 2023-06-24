@@ -63,19 +63,19 @@ stringData2 = "World"
 
 print(stringData + " " + stringData2)
 
-dict = { "name": 2222, "Test2": "test", "Test": 223}
-dict.update({"Test2": 33})
-print(dict)
+dictionary = { "name": 2222, "Test2": "test", "Test": 223}
+dictionary.update({"Test2": 33})
+print(dictionary)
 
-print(dict.keys())
-print(dict.values())
-test2 = list(dict.values())
+print(dictionary.keys())
+print(dictionary.values())
+test2 = list(dictionary.values())
 sortedTest2 = sorted(test2)
 print(sortedTest2)
 
-dict.pop("Tes222", "Test")
+dictionary.pop("Tes222", "Test")
 
-print(dict)
+print(dictionary)
 
 for i in range(5):
     # print(i)
@@ -133,3 +133,38 @@ def heapSort(iterable):
 beforeArray = [1,2,3461,23,5,547,5,2,6,85,6,84,2,1,4,5,3,42,5,7,3]
 resultSort = heapSort(beforeArray)
 print(resultSort)
+
+import bisect
+
+a = [1,2,3,6,7]
+bisect.insort_left(a,4)
+print(a)
+
+def count_by_range(a, left_value, right_value): 
+    right_index = bisect.bisect_right(a, right_value)
+    left_index = bisect.bisect_left(a,left_value)
+    return right_index - left_index
+
+# 리스트 선언 
+a = [1,2,3,3,3,3,4,4,8,9]
+
+print(count_by_range(a,4,4))
+print(count_by_range(a,-1,3))
+
+
+from collections import deque
+from collections import Counter
+
+data = deque([2,3,4])
+data.append(1)
+data.appendleft(55)
+
+
+print(data)
+print(list(data))
+
+
+counter = Counter([1,2,3,1,1,2,4,5,6])
+
+print(counter)
+print(dict(counter))

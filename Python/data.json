@@ -1,0 +1,34 @@
+{ 
+	"placeModel": { 
+		"title": "String" , 
+		"category": "String", 
+		"address": "String", 
+		"phone": "String",
+		"url": "String",
+		"x": "Double",
+		"y": "Double"
+	}, 
+	"allVegan": "Bool",
+	"someMenuVegan": "Bool", 
+	"ifRequestVegan": "Bool",
+	"notRequestMenuArray": [ 
+		{
+			"menu": "String",
+			"price": "String" 
+		}
+	], 
+	"requestMenuArray": [ 
+		{ 
+			"menu": "String", 
+			"price": "String", 
+			"howToRequest": "String", 
+			"isCheck": "Bool"
+		}
+	], 
+	"comments": [ 
+		 { 
+			"comment": "String", 
+			"date": Date"
+		 }
+	]
+}
