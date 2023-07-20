@@ -53,6 +53,7 @@
 		C5B7B8C32A0B81CF003D9402 /* 10974 모든 순열.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "10974 모든 순열.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5B7B8C42A0B8BCA003D9402 /* combinaiton.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = combinaiton.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5C60DFF29C9423C00BD475B /* 11-20.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11-20.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C5D2EB952A49201100B41A8F /* 1107번.리모컨.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1107번.리모컨.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5D8E8642A3F6D8400D88A43 /* 체스판다시칠하기.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "체스판다시칠하기.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5D8E8672A3F6F2800D88A43 /* 팰린드롬수.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "팰린드롬수.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5FA21F629D3DD0700BD2F0E /* 3-29.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3-29.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -115,7 +116,6 @@
 		C5A3C3C22A384E250050AB3D /* DFS&BFS */ = {
 			isa = PBXGroup;
 			children = (
-				C593F8A62A401F070020AA07 /* 14888번.연산자끼워넣기.playground */,
 				C5A3C3BF2A3834480050AB3D /* 24444번.너비우선탐색1.playground */,
 				C5A3C3BE2A3825870050AB3D /* 24445번.너비우선탐색2.playground */,
 				C5A3C3C02A383DDB0050AB3D /* 24446번.너비우선탐색3.playground */,
@@ -171,7 +171,9 @@
 		C5D8E8652A3F6EDA00D88A43 /* 브루트포스 */ = {
 			isa = PBXGroup;
 			children = (
+				C593F8A62A401F070020AA07 /* 14888번.연산자끼워넣기.playground */,
 				C5D8E8642A3F6D8400D88A43 /* 체스판다시칠하기.playground */,
+				C5D2EB952A49201100B41A8F /* 1107번.리모컨.playground */,
 			);
 			name = "브루트포스";
 			path = "브루트포스";

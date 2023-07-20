@@ -42,7 +42,6 @@ func bfs(_ start: Int) {
     let depth = 0
     
     visited[start] = true
-    visitedDepth[start] = depth
     queue.push((start,depth))
     
     while !queue.isEmpty  {
