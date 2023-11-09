@@ -206,7 +206,7 @@ if 6 < arrw.count, arrw[6] < arrw[1] {
 }
 
 var heap = Heap(sort: >, elements: [1,12,3,4,1,6,8,7])
-var heap2 = Heap(sort: >, elements: [1,12,3,4,1,6,8,7])
+var heap2 = Heap(sort: <, elements: [1,12,3,4,1,6,8,7])
 
 print(heap)
 print(heap2)

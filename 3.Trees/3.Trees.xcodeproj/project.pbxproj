@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		C533C9822AF7632C00F7A4C4 /* AVLTree.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AVLTree.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C533C9A92AFBC23100F7A4C4 /* Tries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tries.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C58F1A7B29DD973E0070882B /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C58F1A7C29DE681D0070882B /* ⭐️Heaps.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "⭐️Heaps.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C58F1A7D29DEC5E60070882B /* Priority Queues.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Priority Queues.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -15,7 +17,6 @@
 		C5AA8D9129D9C5AF00B22329 /* BinaryTrees.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinaryTrees.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5C3DF0D29DAC27000E867BF /* BinarySearchTrees.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearchTrees.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5C3DF0E29DB031000E867BF /* ⭐️AVLTrees.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "⭐️AVLTrees.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		C5C3DF0F29DBF3BE00E867BF /* Tries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Tries.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +33,11 @@
 		C5AA8D6F29D9955700B22329 = {
 			isa = PBXGroup;
 			children = (
+				C533C9A92AFBC23100F7A4C4 /* Tries.playground */,
+				C533C9822AF7632C00F7A4C4 /* AVLTree.playground */,
 				C58F1A7D29DEC5E60070882B /* Priority Queues.playground */,
 				C58F1A7C29DE681D0070882B /* ⭐️Heaps.playground */,
 				C58F1A7B29DD973E0070882B /* BinarySearch.playground */,
-				C5C3DF0F29DBF3BE00E867BF /* Tries.playground */,
 				C5C3DF0E29DB031000E867BF /* ⭐️AVLTrees.playground */,
 				C5C3DF0D29DAC27000E867BF /* BinarySearchTrees.playground */,
 				C5AA8D9129D9C5AF00B22329 /* BinaryTrees.playground */,

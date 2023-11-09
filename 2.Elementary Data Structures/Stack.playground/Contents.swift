@@ -106,29 +106,34 @@ public func checkBalancedParentheses(_ string: String) -> Bool {
     return stack.isEmpty
 }
 
-checkBalancedParentheses("h((e))llo(world)() ")
-checkBalancedParentheses("(hello world ")
-printInReverse([1,2,3,4,5,5,6,7,8,8])
-var stack = Stack<Int>()
-stack.push(1)
-stack.push(2)
-stack.push(3)
-stack.push(4)
-
-print(stack)
-stack.pop()
-print(stack)
-stack.peek()
-stack
-stack.isEmpty
+//checkBalancedParentheses("h((e))llo(world)() ")
+//checkBalancedParentheses("(hello world ")
+//printInReverse([1,2,3,4,5,5,6,7,8,8])
+//var stack = Stack<Int>()
+//stack.push(1)
+//stack.push(2)
+//stack.push(3)
+//stack.push(4)
+//
+//print(stack)
+//stack.pop()
+//print(stack)
+//stack.peek()
+//stack
+//stack.isEmpty
 
 
 let array = ["a","b","c","d"]
 var stack2 = Stack(array)
-print(stack2)
 
 var stack3: Stack = [1,2,3,4,5]
 var stack4: Stack = ["A","B"]
 var stack5: Stack = ["s",1,nil] as Stack<Any?>
 stack3
 stack3.reversdOrder()
+
+print(stack2)
+print(stack3)
+print(stack4)
+print(stack5)
+

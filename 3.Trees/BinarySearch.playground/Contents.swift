@@ -50,13 +50,33 @@ public extension RandomAccessCollection where Element: Comparable {
     }
 }
 
+func binarySearch(_ array: [Int], _ target: Int, _ startIndex: Int, _ endIndex: Int) -> Int? {
+    var startIndex = startIndex
+    var endIndex = endIndex
+    
+    while startIndex < endIndex {
+        let mid = (startIndex + endIndex) / 2
+        
+        if array[mid] == target {
+            return mid
+        } else if array[mid] > target {
+            endIndex = mid - 1
+        } else {
+            startIndex = mid +  1
+        }
+    }
+    
+    return nil
+}
 
 let array = [1, 5, 15, 17, 19, 22, 24, 31, 105, 150]
-let search31 = array.firstIndex(of: 32)
+let search31 = array.firstIndex(of: 31)
 let binarySearch31 = array.binarySearch(for: 31)
+let binartSearch31_2 = binarySearch(array, 31, 0, array.count - 1)
 
-print("firstIndex(of:): \(String(describing: search31))")
-print("binarySearch(for:): \(String(describing: binarySearch31))")
+print("firstIndex: \(String(describing: search31))")
+print("binarySearch: \(String(describing: binarySearch31))")
+print("binartSearch_2 : \(binartSearch31_2)")
 
 /// Binary search is a powerful algorithm to learn and comes up often in programming interviews. Whenever you read something along the lines of “Given a sorted array…”, consider using the binary search algorithm. Also, if you are given a problem that looks like it is going to be O(n²) to search, consider doing some up-front sorting so you can use binary searching to reduce it down to the cost of the sort at O(n log n).
 ///

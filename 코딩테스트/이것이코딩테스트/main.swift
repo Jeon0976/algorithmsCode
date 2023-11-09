@@ -1,39 +1,41 @@
 import Foundation
 
-let testCase = readLine()!.components(separatedBy: " ").map { Int($0)! }
+let n = Int(readLine()!)!
 
-let N = testCase[0]
-let M = testCase[1]
-let start = testCase[2]
+var array = Array(repeating: [Int](repeating: 0, count: n), count: n)
 
-var graph = [[Int]](repeating: [Int](), count: N+1)
-var result = [Int](repeating: -1, count: N+1)
-
-for _ in 0..<M {
-    let testArray = readLine()!.components(separatedBy: " ").map { Int($0)! }
-    let from = testArray[0]
-    let to = testArray[1]
+for i in 0..<n {
+    let tempArray = readLine()!.split(separator: " ").map { Int($0)! }
     
-    graph[from].append(to)
-    graph[to].append(from)
+    array[i] = tempArray
 }
 
-var depth = 0
+var result = Int.max
 
-func dfs(_ start: Int, _ depth: Int) {
-    result[start] = depth
-    
-    for i in graph[start].sorted(by: >) {
-        if result[i] == -1 {
-            dfs(i, depth + 1)
+var start = Int.max
+var link = Int.max
+
+
+for i in 0..<n {
+    for j in 0..<n {
+        for k in 0..<n {
+            for h in 0..<n {
+                if i == j || k == h { continue }
+                
+                if i == k || j == h || i == h || j == k { continue }
+                
+                if i >= j || k >= h { continue }
+                
+                start = array[i][j] + array[j][i]
+                
+                link = array[k][h] + array[h][k]
+                
+                print(i, j, k, h, start, link)
+            }
         }
     }
+    
+    result = min(result, abs(start - link))
 }
 
-
-dfs(start, depth)
-
-
-print(result[1...].map { String($0) }.joined(separator: "\n") )
-
-
+print(result)

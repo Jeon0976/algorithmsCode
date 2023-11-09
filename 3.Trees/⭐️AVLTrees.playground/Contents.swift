@@ -72,15 +72,15 @@ public class AVLNode<Element> {
     /// This number is known as the balance factor.
     
     public var balanceFactor: Int {
-        leftHeight - rightHeight
+        return leftHeight - rightHeight
     }
     
     public var leftHeight: Int {
-        leftChild?.height ?? -1
+        return leftChild?.height ?? -1
     }
     
     public var rightHeight: Int {
-        rightChild?.height ?? -1
+        return rightChild?.height ?? -1
     }
     
     public init(value: Element) {
@@ -231,11 +231,13 @@ extension AVLTree {
     
     
     private func balanced(_ node: AVLNode<Element>) -> AVLNode<Element> {
+        print(node.value)
+        print(node.balanceFactor)
         switch node.balanceFactor {
         /// A balanceFactor of 2 suggests that the left child is "heavier" (contains more nodes) than the right child.
-        /// This means that you want to use either right or left-right rotations.
-        case 2:
-            if let leftChild = node.leftChild, leftChild.balanceFactor == -1 {
+            /// This means that you want to use either right or left-right rotations.
+            case 2:
+                if let leftChild = node.leftChild, leftChild.balanceFactor == -1 {
                 return leftRightRotate(node)
             } else {
                 return rightRotate(node)
@@ -317,12 +319,12 @@ extension AVLTree {
 
 var tree = AVLTree<Int>()
 
-for i in 0..<16 {
+for i in 0..<15 {
     tree.insert(i)
 }
 print(tree)
 //print(tree)
-tree.remove(14)
+//tree.remove(14)
 print(tree)
 /// **Challenge 1: Number of leaves**
 /// - How many leaf nodes are there in a perfectly balanced tree of height 3?
